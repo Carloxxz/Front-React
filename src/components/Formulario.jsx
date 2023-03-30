@@ -5,6 +5,7 @@ const API_URL = "https://soccer-backend.onrender.com/api/jugadores/kevin";
 const formularioInicio = {
   playerName: "",
   playerPosition: "",
+  playerImgProfile: "",
 };
 
 const Formulario = () => {
@@ -53,6 +54,16 @@ const Formulario = () => {
             type="text"
             name="playerPosition"
             value={formulario.playerPosition}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Imagen del jugador:
+          <input
+            type="text"
+            name="playerImgProfile"
+            value={formulario.playerImgProfile}
             onChange={handleChange}
           />
         </label>
